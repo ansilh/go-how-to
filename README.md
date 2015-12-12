@@ -5,12 +5,13 @@ The GO language how to for beginners
 ## Pre-requisites
 
 * OS - CentOS 7 
-* Internet connection to download necessary packages
+* A non-root user account in OS for development environment [ with your name ;-) ]
+* Internet connection to download necessary rpm packages ( We will be using `yum` for installing packages )
 
 ### YUM configuration
 
 * Create a diretcory called /DVD & mount CentOS 7 DVD over it
-* Copy the media id from /DVD/.discinfo file
+* Note down the Media ID** from /DVD/.discinfo file
 * Create a file /etc/yum.repos.d/CentOS-DVD.repo and add below entries
 ```bash
 [CentOS-7-DVD]
@@ -19,7 +20,7 @@ baseurl=file:///DVD/
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 enabled=1
-mediaid=1427495138.035654
+mediaid=1427495138.035654 # **Media ID 
 ```
 
 * Enable /etc/yum.repos.d/CentOS-Base.repo by updating parameter `enabled=1`
@@ -32,16 +33,16 @@ mediaid=1427495138.035654
 
 * Create a Github public account if you don't have 
 * Add a new repository on Github ( Dropdown option will come after clicking topbar + sign )
-
+* Create environemnt for GO by executing below
 ```bash
-mkdir $HOME/work
-export GOPATH=$HOME/work
-cd $GOPATH
-mkdir src pkg bin
-cd src
-mkdir -p github.com/ansilh/go-how-to
-export PATH=$PATH:$GOPATH/bin
-cd github.com/ansilh/go-how-to
+$ mkdir $HOME/work
+$ export GOPATH=$HOME/work
+$ cd $GOPATH
+$ mkdir src pkg bin
+$ cd src
+$ mkdir -p github.com/ansilh/go-how-to
+$ export PATH=$PATH:$GOPATH/bin
+$ cd github.com/ansilh/go-how-to
 ```
 
 ### Hello World program
@@ -56,13 +57,13 @@ cd github.com/ansilh/go-how-to
 ### Push your project to Github
 
 ```bash
-cd GOPATH=$HOME/work/src/github.com/ansilh/go-how-to
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/ansilh/go-how-to.git
-git remote -v
-git push origin master
+$ cd GOPATH=$HOME/work/src/github.com/ansilh/go-how-to
+$ git init
+$ git add .
+$ git commit -m "Initial commit"
+$ git remote add origin https://github.com/ansilh/go-how-to.git
+$ git remote -v
+$ git push origin master
 ```
 
 ### Verify your project in Github
