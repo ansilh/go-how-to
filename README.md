@@ -14,12 +14,19 @@ The GO language how to for beginners
 * Create a file /etc/yum.repos.d/CentOS-DVD.repo and add below entries
 
 `[CentOS-7-DVD]`
+
 `name=CentOS-$releasever - Base`
+
 `baseurl=file:///DVD/`
+
 `gpgcheck=1`
+
 `gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7`
+
 `enabled=1`
+
 `mediaid=1427495138.035654`
+
 * Enable /etc/yum.repos.d/CentOS-Base.repo by updating parameter `enabled=1`
 
 ### Installation
