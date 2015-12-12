@@ -60,7 +60,7 @@ $ cd github.com/ansilh/go-how-to
 * `vi hello.go` # This program is there in source tree as hello/hello.go , you can download it
 * `go install github.com/ansilh/go-how-to/hello`
 * Now you will get a file in `$GOPATH/bin/` called `hello`
-* Execute it `hello` will display below
+* Execute it by running `hello` ; will display below message
 
 `Hello, world.`
 
