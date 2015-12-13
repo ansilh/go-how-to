@@ -2,14 +2,14 @@
 
 ## Preface
 
-I've ended-up in writing this How to project because of the containter engine `Docker`.
+I've ended up in writing this 'How-to' project because of the containter engine `Docker`.
 
 http://www.slideshare.net/jpetazzo/docker-and-go-why-did-we-decide-to-write-docker-in-go
 
 And also because of... ; No this one is the real reason behind all this ;) . 
-Whatch this video presentation by Ben Rockwood 
+Whatch this presentation by Ben Rockwood 
 
-** We are in the final days of system administration ** oooh.. :)
+** We are in the final days of system administration ** OOooh.. :)
 
 https://www.usenix.org/conference/lisa14/conference-program/presentation/rockwood
 
