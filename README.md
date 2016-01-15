@@ -96,3 +96,5 @@ $ git push origin master
 ```
 
 ### Verify your project in Github
+
+Author: Ansil Hameed ( ansilh at gmail dot com )
